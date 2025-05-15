@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // Or newer
+    "module": "commonjs", // Or "esnext" if you're using ES modules
+    "rootDir": "./",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["es2020"] // Notice "dom" is not here
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
