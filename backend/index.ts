@@ -12,7 +12,6 @@ app.use(express.json());
 
 app.post('/api/assignments',(req:Request,res:Response)=>{
   const {data} = req.body;
-  console.log(data);
   if (typeof data !== 'string') {
     res.status(400).json({ error: 'Invalid request body format.server Expected a string.' });
     return;
