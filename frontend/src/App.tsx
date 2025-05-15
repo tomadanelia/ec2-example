@@ -6,7 +6,7 @@ function App() {
 const [answer,setAnswer] =useState('');
 useEffect(() => {
     const fetchAnswer = async () => {
-     const res = await fetch('http://13.48.133.219:3001/api/get-answer');
+const res = await fetch('http://13.48.133.219:3001/api/get-answer');
       const json = await res.json();
       setAnswer(json.data);
     };
